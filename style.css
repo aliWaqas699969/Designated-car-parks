@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cars {
+  margin: 30px 60px;
+  /* max-width: 800px; */
+  display: flex;
+  /* flex-direction: column; */
+}
+#results {
+  margin: 0px 50px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+/* //next slides */
+.maps-section {
+  display: flex;
+  justify-content: space-around; /* Space maps evenly */
+  width: 100%; /* Ensure maps take full width */
+  margin-bottom: 20px; /* Add space between maps and weather */
+}
+
+.map-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+.weather-section {
+  display: flex;
+  justify-content: space-around; /* Space weather containers evenly */
+  width: 100%; /* Ensure weather containers take full width */
+}
+
+.weather-container {
+  width: 45%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust alignment */
+}
+
+.forecast-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; /* Adjust vertical margin as needed */
+  width: calc(
+    50% - 15px
+  ); /* Adjust width for two items in a row with spacing */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .forecast-item {
+    width: 100%; /* Change to 100% width for smaller screens */
+  }
+}
+
+.date-time {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.temperature {
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #555;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}

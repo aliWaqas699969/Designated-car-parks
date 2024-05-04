@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bristol Car Park Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4wcphRWd6vFQk1aFh_UsWHkEQzDK9Vyo&callback=initMaps"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Designated car Parks</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Enter location..." />
+        <button onclick="findNearest()">Search</button>
+      </div>
+    </div>
+    <div class="maps-section"></div>
+    <div class="cars">
+      <div class="btn">
+        <button onclick="findNearest()">Find All</button>
+        <button onclick="findByType()">Find by Type</button>
+      </div>
+      <div class="map-container" id="mapBristol"></div>
+      <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>
